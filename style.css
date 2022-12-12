@@ -11,7 +11,7 @@ body {
     height: 379px;
     background: black;
     border-radius: 20px;
-    color: #c6e2ff;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -23,14 +23,14 @@ body {
 }
 
 .border {
-    height: 369px;
+    height: 370px;
     width: 290px;
     border-radius: 20px;
     position: relative;
+    transition: 2s;
 }
 
 .border:hover {
-    transition: 1s;
     border: 1px solid white;
 }
 
@@ -51,8 +51,10 @@ a {
 
 .card h2 {
     margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
     opacity: 0;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .card:hover h2 {
@@ -61,10 +63,17 @@ a {
 
 .card p {
     margin: 20px;
+    color: white;
+	text-shadow: 2px 2px 4px #000000;
     opacity: 0;
-    transition: 3s;
+    transition: all 2s;
 }
 
 .card:hover p {
     opacity: 1;
+}
+
+@media screen and (min-width:820px) {
+
+    
 }
