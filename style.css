@@ -18,8 +18,8 @@ body {
     justify-content: center;
     box-shadow: 0 70px 63px -60px black;
     margin-bottom: 100px;
-    background: url('assets/moi.jpg') center center no-repeat ;
-    background-size: 390px;
+    background: url('assets/IMG_20221209_221305.jpg') center center no-repeat ;
+    background-size: 300px;
 }
 
 .border {
@@ -46,7 +46,7 @@ body {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 .card h2 {
