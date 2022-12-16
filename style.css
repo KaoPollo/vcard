@@ -1,3 +1,4 @@
+
 body {
     background-image: url('assets/2799006.jpg');
     display: flex;
@@ -23,17 +24,22 @@ body {
     background-size: 300px;
 }
 
+.card:hover {
+    border: 1px solid white;
+}
+
+
+
+
 .border {
     height: 370px;
-    width: 290px;
+    width: 300px;
     border-radius: 20px;
     position: relative;
     transition: 2s;
 }
 
-.border:hover {
-    border: 1px solid white;
-}
+
 
 .icons {
     position: absolute;
@@ -46,12 +52,23 @@ body {
     top: 230px;  
 }
 
+
+i:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.50);
+}
+
+
 a {
     color: black;
 }
 
+
 .card h2 {
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: 170;
     color: white;
     text-shadow: 2px 2px 4px #000000;
     opacity: 0;
@@ -62,19 +79,73 @@ a {
     opacity: 1;
 }
 
-.card p {
-    margin: 20px;
+.card h4 {
+    margin-top: 5px;
+    margin-left: 20px;
     color: white;
 	text-shadow: 2px 2px 4px #000000;
     opacity: 0;
     transition: all 2s;
 }
 
-.card:hover p {
+.card:hover h4 {
     opacity: 1;
+}
+
+.text p {
+    opacity: 0;
+    width: 135px;
 }
 
 @media screen and (min-width:820px) {
 
+    .card {
+        width: 600px;
+        height: 379px;
+        background: black;
+        border-radius: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 70px 63px -60px black;
+        margin-bottom: 100px;
+        background: url('assets/IMG_20221209_221305.jpg') left center no-repeat ;
+        background-size: 300px;
+        background-color: black;
+    }
+
     
+    .card:hover h4 {
+        opacity: 0;
+    }
+
+    .card h2 {
+        opacity: 1;
+        margin-left: -5px;
+    }
+
+    .text  {
+        width: 250px;
+        height: 300px;    
+    }
+
+    .text p {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .text .text1 {
+        margin-top: 90px;
+    }
+
+    .text .contact {
+        margin-top: 167px;
+    }
+
+    .icons {
+        margin-left: -25px;
+    }
+
 }
